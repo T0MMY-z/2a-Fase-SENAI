@@ -1,0 +1,11 @@
+.teste{
+  background-color: var(--cor-4);
+  color: var(--cor-2);
+  /*height: 100%;*/
+}
+
+.descricao{
+
+  color: var(--cor-2);
+
+}
