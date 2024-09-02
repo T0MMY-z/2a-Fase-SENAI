@@ -1,0 +1,47 @@
+.sorteio-container{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+
+}
+
+.botaodesorteio-container{
+
+    background-color: gold;
+    color: white;
+    animation: 0.2s;
+    border: 0;
+    border-radius: 10px;
+    height: 140px;
+    font-weight: bold;
+    color: black;
+    flex-direction: column;
+    width: 140px;
+    gap: 30px;
+   
+}
+
+.botaodesorteio-container:hover{
+    cursor: pointer;
+    scale: 1.1;
+    animation: 1.2;
+    
+}
+
+.numero-sorteado{
+
+    color: #ffd700;
+    font-size: xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.numero-dado{
+    font-size: xxx-large;
+
+
+}
