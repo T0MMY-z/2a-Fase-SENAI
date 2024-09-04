@@ -2,6 +2,7 @@ import './App.css'
 import Cadastro from './pages/Cadastro'
 import Cofrinho from './pages/Cofrinho'
 import Dado from './pages/Dado'
+import Democracia from './pages/Democracia'
 import Home from './pages/Home'
 import Medianotas from './pages/Medianotas'
 import Sorteio from './pages/Sorteio'
@@ -16,7 +17,8 @@ function App() {
       {/*<Sorteio />*/}
       {/*<Dado />*/}
       {/*<Cofrinho />*/}
-      <Medianotas />
+      {/*<Medianotas />*/}
+      <Democracia />
     </div>
   )
 }
