@@ -1,4 +1,5 @@
 import './App.css'
+import Arcondicionado from './pages/Arcondicionado'
 import Cadastro from './pages/Cadastro'
 import Cofrinho from './pages/Cofrinho'
 import Dado from './pages/Dado'
@@ -20,7 +21,8 @@ function App() {
       {/*<Cofrinho />*/}
       {/*<Medianotas />*/}
       {/*<Democracia />*/}
-      <Revisao />
+      {/*<Revisao />*/}
+      <Arcondicionado />
     </div>
   )
 }
