@@ -5,6 +5,7 @@ import Dado from './pages/Dado'
 import Democracia from './pages/Democracia'
 import Home from './pages/Home'
 import Medianotas from './pages/Medianotas'
+import Revisao from './pages/Revisao'
 import Sorteio from './pages/Sorteio'
 
 function App() {
@@ -18,7 +19,8 @@ function App() {
       {/*<Dado />*/}
       {/*<Cofrinho />*/}
       {/*<Medianotas />*/}
-      <Democracia />
+      {/*<Democracia />*/}
+      <Revisao />
     </div>
   )
 }
