@@ -27,7 +27,7 @@ function Porquinho() {
 
   return (
     <div>
-      <h1>Exercício 5.25</h1>
+      <h1>Porquinho</h1>
       <p> O porco: Faça um programa que leia o valor de um produto X e leia a quantidade de moedas de um cofrinho que contenha:  N moedas de 1 real;  N moedas de 50 centavos;  N moedas de 25 centavos;  N moedas de 10 centavos;  N moedas de 5 centavos; O programa deverá verificar se o total de reais que contem no cofrinho é o bastante para compra o produto X.</p>
 
       <div className='input-container'>

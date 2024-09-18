@@ -20,7 +20,7 @@ function ArCondicionado() {
 
   return (
     <div>
-      <h1>Exercício 5.27</h1>
+      <h1>Ar condicionador</h1>
       <p>Ligar o ar condicionado: Faça um programa onde o usuário irá escolher se quer converter graus Celsius para Fahrenheit ou Fahrenheit para Celsius. Após a ecolha, faça uma leitura e converta para a unidade escolhida.</p>
 
       <div className='form-container'> 
