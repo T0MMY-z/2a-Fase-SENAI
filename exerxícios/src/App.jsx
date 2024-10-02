@@ -28,6 +28,8 @@ function App() {
       <button onClick={() => setPagina(<Garçom />)}>5.31</button>
       <br />
       <button onClick={() => setPagina(<Albergue />)}>5.7</button>
+      <button onClick>7.10</button>
+      <button onClick>7.11</button>
     </nav>
     { pagina }
     </>
