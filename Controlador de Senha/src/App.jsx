@@ -1,54 +1,66 @@
-import { useState } from 'react'
-import './App.css'
+import { useState } from 'react';
+import './App.css';
+import TelevisorSenhas from './components/TelevisorSenhas'; 
 
 function App() {
+  const [fila, setFila] = useState([]);
 
-  const [fila, setFila] = useState([])
+  function gerarSenhaAleatoria() {
+    return Math.floor(1000 + Math.random() * 9000); 
+  }
 
-  function gerarSenha(){
+  function gerarSenha() {
     let senha = {
-      numero: Date.now(),
+      numero: gerarSenhaAleatoria(),
       tipo: "normal",
-    }
-    setFila([...fila, senha])
+    };
+    setFila([...fila, senha]);
   }
 
-  function gerarSenhaPreferencial(){
+  function gerarSenhaPreferencial() {
     let senha = {
-      numero: Date.now(),
+      numero: gerarSenhaAleatoria(),
       tipo: "preferencial",
-    }
-    setFila([...fila, senha])
-
+    };
+    setFila([...fila, senha]);
   }
 
-  function atender(){
-    if(fila.length){
-      alert(fila[0].numero)
-      //let filaTemp = [...fila,]
-      //fila.splice(0, 1)
-      setFila(fila.slice(1))
-    }else{
-      alert("Não tem ninguém na fila xará, finge que tá fazendo alguma coisa de útil e vai descansar 👍")
-    }}
+  function atender() {
+    
+    const filaPrioritaria = fila.filter(s => s.tipo === "preferencial");
+    const filaNormal = fila.filter(s => s.tipo === "normal");
+
+    const novaFila = [...filaPrioritaria, ...filaNormal];
+
+    if (novaFila.length) {
+      alert(`Atendendo senha: ${novaFila[0].numero}`);
+     
+      setFila(novaFila.slice(1));
+    } else {
+      alert("Não tem ninguém na fila xará, finge que tá fazendo alguma coisa de útil e vai descansar 👍");
+    }
+  }
 
   return (
     <>
-        <button onClick={atender}>Atender</button>
-        <button onClick={gerarSenha}>Senha normal</button>
-        <button onClick={gerarSenhaPreferencial}>Senha preferencial</button>
+      {fila.length > 0 && (
+        <TelevisorSenhas senhaAtual={fila[0].numero} tipo={fila[0].tipo} />
+      )}
 
-        {fila.map( (senha) => (
+      <button onClick={atender}>Atender</button>
+      <button onClick={gerarSenha}>Senha normal</button>
+      <button onClick={gerarSenhaPreferencial}>Senha preferencial</button>
 
+      <div>
+        {fila.map((senha) => (
           <div key={senha.numero}>
             <p>{senha.numero}</p>
             <p>{senha.tipo}</p>
           </div>
-        )) }
-
-
-    </> 
-  )
+        ))}
+      </div>
+    </>
+  );
 }
 
-export default App
+export default App;
