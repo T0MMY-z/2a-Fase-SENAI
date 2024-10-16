@@ -7,6 +7,7 @@ const TelevisorSenhas = ({ senhaAtual, tipo }) => {
       <div className="televisor-header">{tipo}</div>
       <div className="televisor-senha">{senhaAtual}</div>
     </div>
+    
   );
 };
 
