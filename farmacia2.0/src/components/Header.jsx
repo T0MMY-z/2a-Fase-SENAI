@@ -1,15 +1,15 @@
 import React from 'react';
+import './Header.css';
+import Logo from './Logo';
 
 const Header = () => {
   return (
-    <header style={{
-      backgroundColor: 'var(--cor-1)',
-      padding: '20px',
-      textAlign: 'center', 
-    }}>
-      <h1 style={{ color: 'var(--cor-2)' }}>Farmácia da Márcia</h1>
+    <header className="header">
+      <Logo />
+      <h1>FarMárcia seu mal-estar nossa alegria</h1>
+      <p>Sob nova localização!</p>
     </header>
   );
-};
+}
 
 export default Header;

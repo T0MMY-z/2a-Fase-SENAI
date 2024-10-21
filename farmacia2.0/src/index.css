@@ -1,4 +1,4 @@
-:root {
+/*}:root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -65,4 +65,39 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+*/
+:root {
+  --cor-1: #e23e57;
+  --cor-2: #ffffff;
+  --cor-3: #e96a7e;
+  --cor-4: #ce1f3a;
+  --cor-5: #e6e6e6;
+  --cor-6: #ef97a4;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--cor-5);
+}
+
+.header {
+  background-color: var(--cor-1);
+  color: var(--cor-2);
+  padding: 20px;
+  text-align: center;
+}
+
+.home {
+  padding: 20px;
+  text-align: center;
+}
+
+.inauguracao {
+  background-color: var(--cor-4);
+  color: var(--cor-2);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
 }
